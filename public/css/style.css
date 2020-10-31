@@ -2,3 +2,15 @@
   width: 100%;
   height: auto;
 }
+
+.commentbox {
+  border: 1px solid rgb(0,0,0,0.2);
+  padding: 5px;
+  background-color: #f5f5f5;
+  margin: 0 0 10px 0;
+}
+
+.comment {
+  font-weight: bold;
+  color: #333;
+}

@@ -11,7 +11,8 @@
       <div class="well">
         <h2>
           <a href="/articles/<%= a.id %>"><%= a.title %></a>
-          <small>by <%= a.author.getFullName() %></small>
+          <small>by <%= a.author %></small>
+          <!-- for some reason, line 14 breaks when i keep it with a.author.getFullName() even though this is the code from Taylor's repo??? it won't even work when i try to call firstName or lastName individually. the error seems to stem from the "author" table but i don't see any issues with it. i cannot find the issue anywhere -->
         </h2>
         <p>
           <strong><%= moment(a.createdAt).calendar() %></strong>
